@@ -9,7 +9,7 @@ The project was carried out in collaboration with the company [MarketResponse](h
 
 The thesis focuses on the multi-label topic classification of written client feedback collected from the governance domain through surveys. Multi-label topic classification involves assigning more than one topic label to a particular text instance from a predefined set of topics. For this purpose, we compare a traditional machine learning classifier ([Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html)) with a more recent transformer-based model (fine-tuned [BERT](https://huggingface.co/google-bert/bert-base-uncased)) that currently shows state-of-the-art performance for the majority of Natural Language Processing tasks. Since the topic labels in the dataset are structured into main topics and corresponding subtopics, we experiment with one-step and two-step classification approaches. The former implies the classification of instances for all topic labels at once, while the latter means first predicting main topic labels and then subtopic labels. In order to address the imbalanced nature of the dataset, various data adaptation and data balancing techniques are explored, namely (i) undersampling aimed to reduce the prevalence of overrepresented subtopic classes to the average distribution, and (ii) oversampling aimed to generate synthetic data for underrepresented subtopic classes using a generative large language model, GPT-4. We aim to determine the best approach for multi-label topic classification on the provided dataset using a combination of the aforementioned approaches.
 
-The motivation, methodology, results and discussion of the results can be found in the [thesis report](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/blob/main/MA_Thesis_Csenge_Szabo.pdf). 
+The motivation, methodology, results and discussion of the results can be found in the [Thesis Report](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/blob/master/MA_Thesis_Csenge_Szabo.pdf). 
 
 **Note:** Since the data cannot be shared with third-parties, it is not published in this repository. Outputs that give an indication about its content have been hidden.
 
@@ -49,7 +49,7 @@ Thesis Project Structure
 ```
 
 ### \code
-The [code](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/tree/main/code) folder contains the scripts and  notebooks required to reproduce this study.
+The [code](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/tree/master/code) folder contains the scripts and  notebooks required to reproduce this study.
 In order to reproduce the experiments, follow the order of the files listed below:
 
 * `preprocessing.py` cleans the dataset from privacy-sensitive information (names, dates, times, locations, URLs, e-mail addresses). It pre-processes the dataset by applying lowercasing and stop words removal. It implements Binary Relevance problem transformation in order to convert the labels into 0 and 1. It conducts stratified data splitting in a ratio of 80-10-10 (train-validation-test).
@@ -71,10 +71,10 @@ In order to reproduce the experiments, follow the order of the files listed belo
 * `error_analysis.py` allows you to inspect often confused topic labels, and can be used to look up a specific test instance (based on instance ID) to check its gold and predicted labels.
 
 ### \data
-The [data](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/tree/main/data) folder only contains the `example_dataset.csv` since the data is not allowed to be shared due to the confidentiality agreement. However, the CSV file represents the structure of the data.
+The [data](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/tree/master/data) folder only contains the `example_dataset.csv` since the data is not allowed to be shared due to the confidentiality agreement. However, the CSV file represents the structure of the data.
 
 ### \figures
-The [figures](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/tree/main/figures) folder is used to store the figures, for instance, the confusion matrices of each classification approach. It is separated into the different approaches and each contains the corresponding confusion matrices:
+The [figures](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/tree/master/figures) folder is used to store the figures, for instance, the confusion matrices of each classification approach. It is separated into the different approaches and each contains the corresponding confusion matrices:
 
 * \BERT_1step
 * \BERT_2step
@@ -86,16 +86,16 @@ The [figures](https://github.com/csenge-szabo/Multi-label_Topic_Classification_T
 * \SVMs_2step_undersampled
 
 ### \hyperparameters
-The [hyperparameters](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/tree/main/hyperparameters) folder is used to store pickle files, which contain information about the optimal hyper-parameter settings for the one-step and two-step SVMs model. 
+The [hyperparameters](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/tree/master/hyperparameters) folder is used to store pickle files, which contain information about the optimal hyper-parameter settings for the one-step and two-step SVMs model. 
 
 ### \model_predictions
-The [model_predictions](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/tree/main/model_predictions) folder contains the model outputs, i.e. CSV files with the feedback statements from the test data, and their predicted labels. Due to the confidentiality restrictions, the files were not uploaded.
+The [model_predictions](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/tree/master/model_predictions) folder contains the model outputs, i.e. CSV files with the feedback statements from the test data, and their predicted labels. Due to the confidentiality restrictions, the files were not uploaded.
 
 ### \models
-The [models](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/tree/main/models) folder is a location for the trained models. Due to the confidentiality restrictions and the size of the models, the models were not uploaded.
+The [models](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/tree/master/models) folder is a location for the trained models. Due to the confidentiality restrictions and the size of the models, the models were not uploaded.
 
 ### \results
-The [results](https://github.com/csenge-szabo/Multi-label_Topic_Classification_Thesis/tree/main/results) folder contains the results, i.e., the classification reports. The reports can be found in `\BERT` and `\SVMs`.
+The [results](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/tree/master/results) folder contains the results, i.e., the classification reports. The reports can be found in `\BERT` and `\SVMs`.
 * \BERT
     * `test_report_1step.csv`
     * `test_report_2step.csv`
@@ -113,7 +113,7 @@ The required Python 3.7.8 packages for running the code contained in this reposi
 
 ## Thesis Report
 ### `MA_Thesis_Csenge_Szabo.pdf`
-The pdf file contains the full thesis report.
+The pdf file contains the full [Thesis Report](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/blob/master/MA_Thesis_Csenge_Szabo.pdf).
 ***
 
 # References

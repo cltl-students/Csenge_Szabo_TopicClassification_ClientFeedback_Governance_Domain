@@ -13,4 +13,4 @@ This folder contains classification reports for the specific classification setu
     * `test_report_2step_undersampled.csv`
     * `test_report_2step_oversampled.csv`
 
-A more detailed description and analysis of the results can be found in *Chapter 4 - Results* of the [Thesis](https://github.com/csenge-szabo/Multi-Label_Topic_Classification/blob/main/MA_Thesis_Csenge_Szabo.pdf).
+A more detailed description and analysis of the results can be found in *Chapter 4 - Results* of the [Thesis](https://github.com/cltl-students/Csenge_Szabo_TopicClassification_ClientFeedback_Governance_Domain/blob/master/MA_Thesis_Csenge_Szabo.pdf).

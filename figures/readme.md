@@ -1,6 +1,6 @@
 # Figures 
 
-The folder is used to store the confusion matrices for each classification approach. It is separated into subdirectories based on the different approaches and each contains confusion matrices per class:
+The folder is used to store the confusion matrices for each classification approach. It is separated into subdirectories based on the different approaches and each contains confusion matrices per topic label.
 
 * \SVMs_1step
 * \SVMs_2step
